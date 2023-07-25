@@ -1,0 +1,239 @@
+{ margin: 0;
+  padding: 0;
+   }
+
+.main{
+    background-color:white;
+    height:7vh;
+    
+.topleft{
+    float: right;
+    text-decoration-color: white;
+    padding: 5px;
+    border: 3px;
+    border-color: white;
+    }    
+
+}
+
+ul{
+   top: 0px;
+   float: right;
+   list-style-type: none;
+   color: black;
+   
+}
+ul li{
+      display: inline-block;
+}
+ul li a{
+        text-decoration: none;
+        color: gray;
+        padding: 5px 20px;
+        border: 1px solid black;
+        transition: 0.6s ease;
+}
+ul li a:hover{
+              background-color: royalblue;
+              color: white;
+}
+
+.part3 img{
+    
+    height:680px;
+    width:1520px;
+    margin:0px 0px;
+}
+.centered a{
+  position: absolute;
+  top: 520px;
+  left:137px;
+  background-color: white;
+  padding: 20px 60px;
+  float: left;
+  color: gray;   
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.centered2 {
+  position: absolute;
+  top: 681px;
+  left: 205px;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 20px;
+  float: left;
+}
+
+.centered2 a{
+    color: white;
+}
+
+.centered3 {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  transform: translate(-50%, -50%); 
+  font-size: 40px;
+  color: dimgray;
+}
+
+.centered4 {
+  position: absolute;
+  top: 53%;
+  left: 25%;
+  transform: translate(-50%, -50%); 
+  font-size: 40px;
+  color: dimgray;
+}
+
+
+.centered6 {
+  color: grey;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  transform: translate(-50%, -50%); 
+  font-size: 30px;
+
+}
+
+
+.centered7 {
+  color: grey;
+  position: absolute;
+  bottom: 670px;
+  left: 73px;
+  font-size: 30px;
+}
+
+
+.centered8 a{
+  color: grey;
+  position: absolute;
+  top: 20px;
+  left: 8%;
+  font-size: 25px;
+}
+
+
+
+.centered9 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%); 
+  font-family: georgia pro;
+  font-size: 50px;
+  color:white;    
+}
+
+.first img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: 350px;   
+    
+}
+.second img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: 800px;    
+}
+
+.third img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 430px;
+    left:350px;    
+   
+}
+.fourth img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 430px;
+    left: 800px;    
+   
+}
+.centered10 {
+  position: absolute;
+  top: 475px;
+  left: 510px; 
+  font-size: 50px;
+  color: white;
+    
+}
+
+.about_vaccine {
+    height: auto;
+    width: 95vh;
+    position: absolute;
+    left: 400px;
+    text-align: center;
+    padding: 3px;
+    border-image-repeat: stretch;
+    border-style: outset;
+    border-color: black;
+    border-width: 5px;
+    color: black;
+}
+
+.row1{
+    position: absolute;
+    top: 615px;
+    left: 1000px;
+    
+}
+
+
+.gender{
+    position: absolute;
+    top: 590px;
+    left: 600px;
+}
+
+.otpgen{
+    color: blue;
+    position: absolute;
+    border-style: double;
+    border-color: black;
+    padding: 3px;
+    top: 720px;
+    left: 950px;
+}
+.warning{
+    color: red;
+    position: absolute;
+    top: 775px;
+    left: 900px;
+}
+
+.about_us {
+    top: 100px;
+    height: auto;
+    width: 80%;
+    position: absolute;
+    left: 120px;
+    text-align: center;
+    padding: 3px;
+    border-image-repeat: stretch;
+    border-style: outset;
+    border-color: white;
+    border-width: 5px;
+    color: black;
+}
+
+.about_corona {
+    top: 100px;
+    left: 10px;
+    border-style: double black;
+    
+}
+
+
