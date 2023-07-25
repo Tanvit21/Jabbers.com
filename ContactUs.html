@@ -1,0 +1,102 @@
+<!--Contact Us-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+    .icon1{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+    h1{
+        text-align: center;
+        color: white;
+        font-family: ALGERIAN;
+        text-shadow: 1px 0.5px 1px;
+    }
+    p{
+        color: turquoise;
+        font-family: Elephant;
+    }
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    height: 790px;
+    width: 1000px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body style="background-image: url(https://www.xmple.com/wallpaper/gradient-linear-grey-blue-1920x1080-c2-00ced1-d3d3d3-a-300-f-14.svg)">
+
+<h1 style="font-size: 50px;font-family: ">Contact Us</h1>
+<div class="container">
+
+<form action="/action_page.php" method="post" autocomplete="off" name="google-sheet2">
+
+
+    <label for="fname"><p style="font-size: 25px">Full Name</p></label>
+    <input type="text" name="FullName" placeholder="Your full name.." required>
+
+
+    <label for="email"><p style="font-size: 25px">Enter Valid Email</p></label>
+    <input type="text" name="Email" placeholder="Your email id.." required>
+
+    <label for="ph.no."><p style="font-size: 20px"><p style="font-size: 25px">&#9742; Contact Us - +91 9878686561</p></label>
+    <label for="email"><p style="font-size: 20px"><p style="font-size: 25px">&#9993;Email us - @gmail.com</p></label>
+
+    <label for="subject"><p style="font-size: 25px"><p style="font-size: 25px">&#10533; Message</p></label>
+    <textarea name="Subject" placeholder="Enter Your Message..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+     <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzgNRDTxZu6norVBLPwm85_b7ZqnmYiaZeE8yZ8tiQTvgoA9Liofmhpj-cTX906Bemlxg/exec'
+            const form = document.forms['google-sheet2']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank You for Contacting Us!!!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+</body>
+</html>
