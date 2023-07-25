@@ -1,0 +1,142 @@
+<!--RegistrationForm-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: lightgray;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+  font-size: 30px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  width: 50%;
+}
+
+a {
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+<form action="/action_page.php" method="post" autocomplete="off" name="google-sheet">
+  <div class="container">
+    <center><h1 style="font-family: ALGERIAN">Register For Vaccine</h1></center>
+    <hr>
+    <label for="name"><b>Your Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="Name" required>
+
+    <label for="aadhar"><b>Aadhar Number</b></label>
+    <input type="password" placeholder="Enter 16 DIGIT Aadhar Number" name="AadharNo." required>
+
+    <label for="email"><b>Enter Email</b></label>
+    <input type="text" placeholder="Enter Email" name="Email" required>
+      
+    <label for="phn"><b>Your Phone Number</b></label>
+    <input type="text" placeholder="Enter 10 DIGIT Phone Number" name="PhoneNo." required>
+      
+    <label for="medcon"><b>Specify Your Medical Condition/s (If Any)</b></label>
+    <input type="text" placeholder="Diabetes, Asthama etc..." name="Sp.MedicalCondt" required>
+
+
+    <p><b>Select a Suitable Time from The Given Timings</b></p>
+    <select name="TimeSlot">    
+    <option value="none">Select Timing For Vaccination</option>    
+    <option value="10am-12pm">10am-12pm</option>    
+    <option value="1pm-3pm">1pm-3pm</option>    
+    <option value="4pm-6pm">4pm-6pm</option>        
+    </select>
+    <div class="gender">
+    <p><b>Please Specify Your Gender</b></p>
+    <INPUT TYPE="Checkbox" Name="Gender" Value ="Male">Male</INPUT>
+    <INPUT TYPE="Checkbox" Name= "Gender" Value ="Female">Female</INPUT>
+    <INPUT TYPE="Checkbox" Name= "Gender" Value ="Others">Others</INPUT>
+    </div>
+    <div class="row1">
+    <label for="dob"><b>Enter Your Date Of Birth</b></label>
+    <input type="date" placeholder="birthday" name="BirthDate" required>
+        
+    </div> 
+    <hr>
+      <button class="registerbtn">
+      <center><div>
+      
+          <p><b>REGISTER</b></p></div></center></button>
+  </div>
+    
+    
+    <div class="otpgen">
+        <a href="OTP.html">
+    <p><b>Click Here to Genetate unique ID</b></p> </a>   
+</div>
+    <div class="warning">
+    <p><i>*Please make sure you register before clicking here to get your unique ID</i></p>
+    </div>
+</form>
+
+    
+     <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxc_YDdFG2iprTzllVgu-RUy-Nh2sRZ_vSrkTn8aM4gUfFTkG4dP78RMklU2JJsM0u23g/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us!!! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    
+</body>
+</html>
